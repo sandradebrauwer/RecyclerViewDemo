@@ -18,6 +18,7 @@ public class JokeViewModel extends ViewModel {
     public JokeViewModel() {
     }
 // alleen mopjes opvragen nog geen maken
+    //normaal komt dit uit een database of backend webservice
     public MutableLiveData<ArrayList<Joke>> getJokes() {
         if(jokes==null){
             jokes= new MutableLiveData<>();
